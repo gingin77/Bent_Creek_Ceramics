@@ -40,6 +40,13 @@ h2{
   font-size: 90%;
 }
 
+h3{/*starting concept taken from - https://css-tricks.com/text-blocks-over-image/*/
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+}
+
 
 section{
   /*display: inline-block;*/
