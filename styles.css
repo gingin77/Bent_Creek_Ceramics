@@ -5,6 +5,19 @@ font-family: 'Merriweather', serif;
 
 */
 
+header{
+  display: flex;
+}
+
+.logo{
+  width: auto;
+  height:auto;
+  /*max-width: 40px;*/
+  /*max-height: 50px;*/
+  /*padding: 15px;*/
+  position: relative;
+  display: flex;
+}
 
 h1,h2,h3{
   font-family: 'Merriweather', serif;
