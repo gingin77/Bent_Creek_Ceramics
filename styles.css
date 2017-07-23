@@ -5,19 +5,23 @@ font-family: 'Merriweather', serif;
 
 */
 
-header{
-  display: flex;
+.wrapper{
+  width: 2630px;
+
+}
+/*.top_header{*/
+  /*display: flex;*/
 }
 
-.logo{
+/*.logo{
   width: auto;
   height:auto;
-  /*max-width: 40px;*/
-  /*max-height: 50px;*/
-  /*padding: 15px;*/
+  max-width: 40px;
+  max-height: 50px;
+  padding: 15px;
   position: relative;
   display: flex;
-}
+}*/
 
 h1,h2,h3{
   font-family: 'Merriweather', serif;
@@ -29,4 +33,63 @@ h1{
 
 h2{
   font-size: 90%;
+}
+
+.gallery{
+  border: 2px solid orange;
+  width: 2630px;
+  /*height: 660px;*/
+  display: inline-block;
+  /*flex-direction: row;*/
+  /*flex-wrap: wrap;*/
+  /*flex-basis: 0;*/
+}
+
+
+.first-row{
+  display: inline-block;
+  border: 2px solid orange;
+  width: 2630px;
+  /*height: 420px;*/
+  /*display: flex;*/
+  align-items: flex-start;
+  /*flex-direction: row;*/
+  /*flex-wrap: wrap;
+  /*flex-basis: 0;*/
+  /*justify-content: space-between;*/
+  /*z-index: 100;*/
+}s
+
+#img_1{/*attempt at a bottom crop*/
+  border: 2px solid purple;
+  width: 1500px;
+  height: 839px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/*attempts at a bottom crop*/
+  /*padding-bottom: -286px;
+  /*width: 100%;*/
+  /*position: absolute;*/
+  /*max-height: initial;*/
+  /*margin: 0 auto -50%;*/
+  /*clip: rect(750px 1000px 750px 0px); << when this is on, I'll see the bottom margin flash emapty when the page is reloading... don't know why*/
+  /*z-index: 1000;*/
+}
+/*
+#img_2{
+  border: 2px solid purple;
+  width: 265px;
+  height: 420px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+#img_3{
+  border: 2px solid purple;
+  width: 278px;
+  height: 420px;
+  object-fit: cover;
+  overflow: hidden;
 }
