@@ -46,6 +46,11 @@ section{
 
 #image1{
   border: 2px solid purple;
+  width: 750px;
+  height: 390px;
+  object-fit: cover;
+  object-position: top;
+  overflow: hidden;
 }
 
 
