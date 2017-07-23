@@ -6,8 +6,8 @@ font-family: 'Merriweather', serif;
 */
 
 .wrapper{
-  width: 1660px;
-  display: inline;
+  /*width: 1400px;*/
+  /*display: inline;*/
 }
 /*.top_header{*/
   /*display: flex;*/
@@ -41,7 +41,17 @@ section{
 }
 
 .first-row{
-  /*display: inline-block;*/
+  border: 2px solid orange;
+  width: 1400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+img{
+  margin: 10px;
 }
 
 #image1{
@@ -53,6 +63,23 @@ section{
   overflow: hidden;
 }
 
+#image2{
+  border: 2px solid purple;
+  width: 260px;
+  height: 390px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+#image3{
+  border: 2px solid purple;
+  width: 260px;
+  height: 390px;
+  object-fit: cover;
+  object-position: left;
+  overflow: hidden;
+}
 
 /*.gallery{
   border: 2px solid orange;
