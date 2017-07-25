@@ -27,10 +27,11 @@ h1, h2, h3{
 
 .top_header{
   border: 2px solid purple;
-  /*display: flex;*/
-  /*flex-direction: row;*/
-  /*align-items: center;*/
-  /*position: relative;*/
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  flex: 0 0 auto;
+  /*position:relative;*/
 }
 
 .logo img{
@@ -46,8 +47,9 @@ h1, h2, h3{
 nav{
   border: 2px solid orange;
   display: flex;
-  width: 100%;
+  width: 70%;
   margin: 0 auto;
+  justify-content: space-around;
 }
 
 nav a{
@@ -56,7 +58,11 @@ nav a{
   text-transform: uppercase;
 }
 
-
+.empty_logo{
+  border: 2px solid orange;
+  width: 90px;
+  height: 97.333px;
+}
 
 .first-row{
   border: 2px solid orange;
