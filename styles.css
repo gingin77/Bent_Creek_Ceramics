@@ -63,6 +63,10 @@ h2{
 }
 
 
+#image1_textbox {
+  /*position: relative;*/
+}
+
 
 
 #image1_textbox{/*starting concept taken from - https://css-tricks.com/text-blocks-over-image/*/
@@ -90,10 +94,14 @@ h2{
   z-index: -10
 }
 
-#image1_textbox h3{
-  text-align: right;
-  padding: 10px;
-
+#image1_textbox div{/*this is the code for Endless Poss...*/
+  margin: 10px;
+  position: absolute;
+  bottom: 100px;
+  width: 25%;
+  z-index: 10;
+  color: white;
+  background-color: green;
 }
 
 
