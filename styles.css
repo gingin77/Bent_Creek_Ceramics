@@ -1,8 +1,7 @@
 /*Fonts from Google fonts
 
-font-family: 'Roboto', sans-serif;
 font-family: 'Merriweather', serif;
-
+font-family: 'Roboto', sans-serif;
 */
 
 .wrapper{
@@ -14,23 +13,24 @@ img{
   margin: 10px;
 }
 
-/*.top_header{*/
-  /*display: flex;*/
+.top_header{
+  border: 2px solid purple;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /*position: relative;*/
 }
 
-/*.logo{
+.logo{
   width: auto;
   height:auto;
   max-width: 40px;
   max-height: 50px;
   padding: 15px;
-  position: relative;
-  display: flex;
-}*/
-
-h1,h2,h3{
-  font-family: 'Merriweather', serif;
+  /*position: absolute;*/
+  display: inline-block;
 }
+
 
 h1{
   font-weight: bold;
@@ -40,11 +40,20 @@ h2{
   font-size: 90%;
 }
 
+h1, h2, h3{
+  font-family: 'Merriweather', serif;
+}
+
+nav a{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
 
 
 .first-row{
   border: 2px solid orange;
-  width: 1400px;
+  /*width: 1400px;*/
   display: flex;
   flex-direction: row;
   /*flex-wrap: wrap; << this isn't really needed unless I combine the 2 rows*/
@@ -54,26 +63,20 @@ h2{
 
 .second-row{
   border: 2px solid orange;
-  width: 1400px;
+  /*width: 1400px;*/
   display: flex;
   flex-direction: row;
   /*flex-wrap: wrap; << this isn't really needed unless I combine the 2 rows*/
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 
-#image1_textbox {
+.photos{/*starting concept taken from - https://css-tricks.com/text-blocks-over-image/*/
   /*position: relative;*/
-}
-
-
-
-#image1_textbox{/*starting concept taken from - https://css-tricks.com/text-blocks-over-image/*/
-  position: relative;
   border: 0.5px solid pink;
   display: block;
-  /*position:relative;*/
+  position:relative;/*this line is necessary to stay tied to the caption*/
   /*flex-direction: row;*/
   /*flex-wrap: wrap; << this isn't really needed unless I combine the 2 rows*/
   /*align-items: flex-start;
@@ -81,6 +84,19 @@ h2{
   top: 200px;
   left: 0;
   width: 100%;*/
+}
+
+
+.photos div{/*this is the code for Endless Poss...*/
+  font-family: 'Merriweather', serif;
+  margin: 10px;
+  position: absolute;
+  bottom: 50px;
+  /*width: 25%;*/
+  padding: 10px;
+  z-index: 10;
+  color: white;
+  background-color: green;
 }
 
 #image1{
@@ -93,17 +109,6 @@ h2{
   float: left;
   z-index: -10
 }
-
-#image1_textbox div{/*this is the code for Endless Poss...*/
-  margin: 10px;
-  position: absolute;
-  bottom: 100px;
-  width: 25%;
-  z-index: 10;
-  color: white;
-  background-color: green;
-}
-
 
 #image2{
   border: 2px solid purple;
@@ -139,14 +144,4 @@ h2{
   object-fit: cover;
   object-position: top;
   overflow: hidden;
-}
-
-/*.gallery{
-  border: 2px solid orange;
-  width: 2630px;
-  height: 660px;
-  display: inline-block;
-  /*flex-direction: row;*/
-  /*flex-wrap: wrap;*/
-  /*flex-basis: 0;*/
 }
