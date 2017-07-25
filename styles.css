@@ -13,25 +13,6 @@ img{
   margin: 10px;
 }
 
-.top_header{
-  border: 2px solid purple;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  /*position: relative;*/
-}
-
-.logo{
-  width: auto;
-  height:auto;
-  max-width: 40px;
-  max-height: 50px;
-  padding: 15px;
-  /*position: absolute;*/
-  display: inline-block;
-}
-
-
 h1{
   font-weight: bold;
 }
@@ -44,7 +25,33 @@ h1, h2, h3{
   font-family: 'Merriweather', serif;
 }
 
+.top_header{
+  border: 2px solid purple;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*align-items: center;*/
+  /*position: relative;*/
+}
+
+.logo img{
+  width: auto;
+  height:auto;
+  max-width: 40px;
+  max-height: 50px;
+  padding: 15px;
+  /*position: absolute;*/
+  display: inline-block;
+}
+
+nav{
+  border: 2px solid orange;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
 nav a{
+  display: inline-block;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
 }
