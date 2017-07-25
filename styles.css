@@ -58,7 +58,7 @@ nav a{
   flex-direction: row;
   /*flex-wrap: wrap; << this isn't really needed unless I combine the 2 rows*/
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .second-row{
@@ -68,7 +68,7 @@ nav a{
   flex-direction: row;
   /*flex-wrap: wrap; << this isn't really needed unless I combine the 2 rows*/
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 
