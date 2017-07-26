@@ -4,9 +4,15 @@ font-family: 'Merriweather', serif;
 font-family: 'Roboto', sans-serif;
 */
 
-.wrapper{
+
+/****** GLOBAL ELEMENTS **************/
+
+body{
   background-color: #f2f1e8;
   z-index: -100;
+  width: 100%;
+  /*position: relative;*/
+  margin: 0px 10px 0 10px;
   /*width: 1400px;*/
   /*display: inline;*/
 }
@@ -16,38 +22,65 @@ img{
 }
 
 h1{
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 h2{
-  font-size: 90%;
+  /*font-size: 90%;*/
 }
+
 
 h1, h2, h3{
   font-family: 'Merriweather', serif;
 }
 
 header{
-  /*position: fixed;*/
-}
-
-.position-fixer{
-  border: 2px solid purple;
+  /*border: 2px solid purple;*/
   /*flex: 0 106px; I tried to find a solution to fix the header withouth using position: fixed... Its not working*/
+  margin: -8px -8px 0 -8px;
+  /*margin-top: -0px;*/
   display: flex;
   align-items: center;
+  /*flex-flow: row;*/
+  width: 100%;
+
+  box-shadow: 0 0px 3px rgba( 0,0,0,0.45);
+  background-color: #ffffff;
+
+  position: fixed;
+  text-align: center;
   z-index: 10;
-  flex: 0 0 auto;
   /*position:relative;*/
 }
 
 main {
-  flex: 1 1 100px;
-  order: 1;
-  overflow: auto;
+  margin: 0px;
+  padding-top: 60px;
+  /*flex: 1 1 100px;*/
+  /*order: 1;*/
+  /*overflow: auto;*/
 }
 
+nav{
+  /*border: 2px solid orange;*/
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+footer{
+  /*margin-left: 20px;*/
+
+}
+
+/******   END of GLOBAL ELEMENTS   **************/
+
+/********  TOP HEADER ELEMENTS   **************/
+
+
 .logo img{
+  /*margin-left: 0;*/
   width: auto;
   height:auto;
   max-width: 40px;
@@ -57,29 +90,46 @@ main {
   display: inline-block;
 }
 
-nav{
-  border: 2px solid orange;
-  display: flex;
-  width: 70%;
-  margin: 0 auto;
-  justify-content: space-around;
-}
-
 nav a{
   display: inline-block;
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
+  font-size: large;
+  color: #2b2f26;
+}
+
+nav a:hover{
+  color: #CD5D67;
 }
 
 .empty_logo{
-  border: 2px solid orange;
+  /*border: 2px solid orange;*/
   width: 90px;
-  height: 97.333px;
+  height: 98px;
 }
 
+
+/****** MAIN ELEMENTS (Includes 1 Div (.title) and a Section (.gallery) )**************/
+
+.title{
+  text-align: center;
+  padding: 3% 0 0 0;
+  font-size: 175%;
+  /*font-weight: lighter;*/
+}
+
+.title h2 {
+  font-size: 100%;
+  font-weight: lighter;
+  margin-top: -0.8em;
+  margin-bottom: 5%;
+}
+
+
+
 .first-row{
-  border: 2px solid orange;
-  flex: 1 1 auto;
+  /*border: 2px solid orange;*/
+  /*flex: 1 1 auto;*/
   /*width: 1400px;*/
   display: flex;
   flex-direction: row;
@@ -89,7 +139,7 @@ nav a{
 }
 
 .second-row{
-  border: 2px solid orange;
+  /*border: 2px solid orange;*/
   /*width: 1400px;*/
   display: flex;
   flex-direction: row;
@@ -123,11 +173,11 @@ nav a{
   padding: 10px;
   z-index: 10;
   color: white;
-  background-color: green;
+  background-color: #2b2f26;
 }
 
 #image1{
-  border: 2px solid purple;
+  /*border: 2px solid purple;*/
   width: 750px;
   height: 390px;
   object-fit: cover;
@@ -171,4 +221,13 @@ nav a{
   object-fit: cover;
   object-position: top;
   overflow: hidden;
+}
+
+footer div{
+  background-color: #2b2f26;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  color: #f2f1e8;
 }
