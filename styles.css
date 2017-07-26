@@ -102,6 +102,10 @@ nav a:hover{
   color: #CD5D67;
 }
 
+nav a:active{
+  color: #968772;
+}
+
 .empty_logo{
   /*border: 2px solid orange;*/
   width: 90px;
@@ -125,7 +129,10 @@ nav a:hover{
   margin-bottom: 5%;
 }
 
-
+.gallery{
+  margin: auto;
+  width: 98%;
+}
 
 .first-row{
   /*border: 2px solid orange;*/
@@ -146,12 +153,14 @@ nav a:hover{
   /*flex-wrap: wrap; << this isn't really needed unless I combine the 2 rows*/
   align-items: flex-start;
   justify-content: space-between;
+  flex-shrink: 0.5;
+  margin: 0.5% 0 0.5% 0;
 }
 
 
 .photos{/*starting concept taken from - https://css-tricks.com/text-blocks-over-image/*/
   /*position: relative;*/
-  border: 0.5px solid pink;
+  /*border: 0.5px solid pink;*/
   display: block;
   position:relative;/*this line is necessary to stay tied to the caption*/
   /*flex-direction: row;*/
@@ -188,16 +197,17 @@ nav a:hover{
 }
 
 #image2{
-  border: 2px solid purple;
+  /*border: 2px solid purple;*/
   width: 260px;
   height: 390px;
   object-fit: cover;
   object-position: center;
   overflow: hidden;
+  flex-grow: 2;
 }
 
 #image3{
-  border: 2px solid purple;
+  /*border: 2px solid purple;*/
   width: 260px;
   height: 390px;
   object-fit: cover;
@@ -206,7 +216,7 @@ nav a:hover{
 }
 
 #image4, #image5, #image7{
-  border: 2px solid purple;
+  /*border: 2px solid purple;*/
   width: 260px;
   height: 260px;
   object-fit: cover;
@@ -215,7 +225,7 @@ nav a:hover{
 }
 
 #image6{
-  border: 2px solid purple;
+  /*border: 2px solid purple;*/
   width: 520px;
   height: 260px;
   object-fit: cover;
@@ -223,11 +233,14 @@ nav a:hover{
   overflow: hidden;
 }
 
+
+/********  FOOTER ELEMENTS   **************/
+
 footer div{
   background-color: #2b2f26;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 10px;
+  padding-left: 20px;
   color: #f2f1e8;
 }
