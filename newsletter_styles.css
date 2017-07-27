@@ -246,4 +246,27 @@ footer div{
   color: #f2f1e8;
 }
 
-/********  ABOUT Page ELEMENTS >> moved to seperate style sheet  **************/
+/********  ABOUT Page ELEMENTS   **************/
+.wrapper{
+  max-width: 580px;
+  margin: 0 12% 0 12%;
+  padding-top: 60px;
+  font-family: 'Merriweather', serif;
+}
+
+.wrapper section h1{
+  text-align: center;
+  padding: 3% 0 0 0;
+  font-size: 200%;
+  /*font-weight: lighter;*/
+}
+
+.thumbnail img{
+  display: inline;
+  float: left;
+  margin: 0.2% 3% 1% 0;
+}
+
+p, span, blockquote, table{
+  font-size: 1em;
+}
