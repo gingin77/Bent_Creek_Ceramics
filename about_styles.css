@@ -318,7 +318,7 @@ p, span, blockquote, table{
 
 .facilities p{
   display:inline-block;
-  float: left;
+  float: left;/*putting the float on this first element was more effective than putting a right float on figure.*/
   margin: 0.2% 0.2% 0.2% 0.2%;
   width: 75%;
 }
