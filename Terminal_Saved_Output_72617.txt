@@ -1,0 +1,544 @@
+Last login: Sat Jul 22 15:46:37 on ttys000
+Gin@Ginnies-iMac:~$ cd Desktop/Dev/
+Gin@Ginnies-iMac:~/Desktop/Dev$ cd Bent_Creek_Ceramics/
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ ls
+README.md   favicons_3/ images/     index.html  styles.css
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   images/.DS_Store
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	favicons_3/
+	images/bent-creek-logo_mod_4fav_gen.png
+	images/bent-creek-logo_mod_coral.png
+	images/bent-creek-logo_mod_dk_olive copy.png
+	images/bent-creek-logo_mod_dk_olive.png
+	images/bent-creek-logo_orginial.png
+
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git reset images/.DS_Store 
+Unstaged changes after reset:
+M	.DS_Store
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	favicons_3/
+	images/.DS_Store
+	images/bent-creek-logo_mod_4fav_gen.png
+	images/bent-creek-logo_mod_coral.png
+	images/bent-creek-logo_mod_dk_olive copy.png
+	images/bent-creek-logo_mod_dk_olive.png
+	images/bent-creek-logo_orginial.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git add .
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   .DS_Store
+	new file:   favicons_3/android-chrome-192x192.png
+	new file:   favicons_3/android-chrome-256x256.png
+	new file:   favicons_3/apple-touch-icon.png
+	new file:   favicons_3/browserconfig.xml
+	new file:   favicons_3/favicon-16x16.png
+	new file:   favicons_3/favicon-32x32.png
+	new file:   favicons_3/favicon.ico
+	new file:   favicons_3/manifest.json
+	new file:   favicons_3/mstile-150x150.png
+	new file:   favicons_3/safari-pinned-tab.svg
+	new file:   images/.DS_Store
+	new file:   images/bent-creek-logo_mod_4fav_gen.png
+	new file:   images/bent-creek-logo_mod_coral.png
+	new file:   images/bent-creek-logo_mod_dk_olive copy.png
+	new file:   images/bent-creek-logo_mod_dk_olive.png
+	new file:   images/bent-creek-logo_orginial.png
+
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git commit - m "First commit for favicons and other new image files"
+error: pathspec '-' did not match any file(s) known to git.
+error: pathspec 'm' did not match any file(s) known to git.
+error: pathspec 'First commit for favicons and other new image files' did not match any file(s) known to git.
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git commit -m "First commit for favicons and other new image files"
+[master 6219a17] First commit for favicons and other new image files
+ 17 files changed, 42 insertions(+)
+ create mode 100644 favicons_3/android-chrome-192x192.png
+ create mode 100644 favicons_3/android-chrome-256x256.png
+ create mode 100644 favicons_3/apple-touch-icon.png
+ create mode 100644 favicons_3/browserconfig.xml
+ create mode 100644 favicons_3/favicon-16x16.png
+ create mode 100644 favicons_3/favicon-32x32.png
+ create mode 100644 favicons_3/favicon.ico
+ create mode 100644 favicons_3/manifest.json
+ create mode 100644 favicons_3/mstile-150x150.png
+ create mode 100644 favicons_3/safari-pinned-tab.svg
+ create mode 100644 images/.DS_Store
+ create mode 100644 images/bent-creek-logo_mod_4fav_gen.png
+ create mode 100644 images/bent-creek-logo_mod_coral.png
+ create mode 100644 images/bent-creek-logo_mod_dk_olive copy.png
+ create mode 100644 images/bent-creek-logo_mod_dk_olive.png
+ create mode 100644 images/bent-creek-logo_orginial.png
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git push
+Counting objects: 25, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (25/25), 184.26 KiB | 0 bytes/s, done.
+Total 25 (delta 5), reused 0 (delta 0)
+remote: Resolving deltas: 100% (5/5), completed with 3 local objects.
+To https://github.com/gingin77/Bent_Creek_Ceramics.git
+   287610f..6219a17  master -> master
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ cd ..
+Gin@Ginnies-iMac:~/Desktop/Dev$ git clone https://github.com/gingin77/Bent_Creek_Ceramics.git
+fatal: destination path 'Bent_Creek_Ceramics' already exists and is not an empty directory.
+Gin@Ginnies-iMac:~/Desktop/Dev$ cd Bent_Creek_Ceramics/
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ ls
+README.md   favicons_3/ images/     index.html  styles.css
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ cd ..
+Gin@Ginnies-iMac:~/Desktop/Dev$ rm -r Bent_Creek_Ceramics/
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/00/3942c8b48b5aae328e4c795702b5d99effbdaf? yes
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/01/cfab87c2dd28a763ffc26b7bb8cf9244ba04ce? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/04/55ad85382816f3f29317ba417c543121bc2c9f? 
+rm: Bent_Creek_Ceramics//.git/objects/04: Directory not empty
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/09/2c2901f7e83fc4e86fd936f8efc4859598f21d? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/09/f6e893f2edc8d49b553dda6d6a364b1b235d8d? u
+rm: Bent_Creek_Ceramics//.git/objects/09: Directory not empty
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/0c/88b2a9371d9e313aa409c36e17af9ddf55a18a? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/12/faf5621e228f38c68ad3d1d1143d34e38ec3bd? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/22/28b9e57da69fbd40c2a4f7bff78bafac56f8f4? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/22/9b716b7f5ac8da7be83eb1e0011e255a87d1b8? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/23/b982fa27a8f583d34eb692f09ea8bbc2bba272? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/25/0d38c63b754454742a64a3515dee4420fb6d52? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/25/126387919d5851d37cb80805d2ea734bc5cc59? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/25/15e9a27cb49b517ef83af345e9bd3a8e49f1db? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/27/6bcae75e39c3df1a551c4ac5f0d3b36af20f2a? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/28/7610f1ee5544a6759779d404f64e40d49f6e5f? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/36/54153a6bb047d707e5ee6c8b4595f68a85e9e7? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/37/88ffbc99a610c17229e8bc249ba5c0cf5fa403? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/47/01fc10138c527c64f8cc3ad4748552291325d5? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/4d/51649e97a949342109d79e1a17fbb71159d048? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/4f/43a40d23038f860c6677263b12c50823ffdd7a? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/4f/bbbd0ed47b47b3a43840745ee84d97ee32baef? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/50/08ddfcf53c02e82d7eee2e57c38e5672ef89f6? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/50/c27e7d42157bcfb77412dd29282b4ae01178b3? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/57/500a17d29a74842818ee956924fc9c42663dfa? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/62/100ea54abb8702112589fab9f1ca13e85cae75? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/62/19a17c0fa801ba9d5189ed7c53bb0403c51515? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/65/78e35bec28bbb53ee7d45c7572058322546dc2? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/72/0b444f93586f8ffb9b44c36a042faf4602138d? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/73/df455b6966f8f894b1515f92d102a13ed6f39a? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/77/2d139f377986f7c006ed9ce874fd037f6e3c39? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/86/efd48bc4738d890adde3a67f2157f293b07246? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/a1/788200e9701f82aaefc372a7c775245ef30f63? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/a2/13911768411d7bcdc64fd80eae45a65dee7206? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/a4/13477bb0f985bebae2015a3c615823f1c8ceb1? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/ab/5c887426bd7294010c982817499e9c86908993? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/ae/22a3995a3a87b7fc60f64ba257a0b4c20da76c? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/b1/9fba18cd1e07e514a429658de8b965b2a0cd4c? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/b3/930d0f047184047cb81d620436d91653438b8b? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/b9/009e9aeff2ee0814f6e4cf155104b0de007cd1? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/c3/443df31091274558043f71f03946031c1de3f8? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/c3/4ff44e5ee848859fdddc1074f6f8fe99276602? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/c6/a9e211fa09ee8922833e0b9651cfe5ea04072d? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/d7/90e59e60ff1f9cb23cd0aca8d41f8ddf1f717b? 
+rm: Bent_Creek_Ceramics//.git/objects/d7: Directory not empty
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/db/8ea9c57c6a455b15e79223d19d2cab0dde80dc? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/e8/d0d97f3f1b1d7c64222af2bd345ecb7b69c9a7? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/f7/f37be90eee2ade54c2d51c98a3d8d724c55906? y
+override r--r--r--  Gin/staff for Bent_Creek_Ceramics//.git/objects/f8/7054e5fee337ebe2957987516538e71aebea6a? y
+rm: Bent_Creek_Ceramics//.git/objects: Directory not empty
+rm: Bent_Creek_Ceramics//.git: Directory not empty
+rm: Bent_Creek_Ceramics/: Directory not empty
+Gin@Ginnies-iMac:~/Desktop/Dev$ y
+y-bash: y: command not found
+Gin@Ginnies-iMac:~/Desktop/Dev$ yls
+-bash: yls: command not found
+Gin@Ginnies-iMac:~/Desktop/Dev$ ls
+Bent_Creek_Ceramics/      Week_1_project_All_files/ ibeer_starter_files/      test-repo/
+Gin@Ginnies-iMac:~/Desktop/Dev$ cd Bent_Creek_Ceramics/
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ ls
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ cd ..
+Gin@Ginnies-iMac:~/Desktop/Dev$ git clone https://github.com/gingin77/Bent_Creek_Ceramics.git
+fatal: destination path 'Bent_Creek_Ceramics' already exists and is not an empty directory.
+Gin@Ginnies-iMac:~/Desktop/Dev$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+Gin@Ginnies-iMac:~/Desktop/Dev$ cd Bent_Creek_Ceramics/
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git clone https://github.com/gingin77/Bent_Creek_Ceramics.git
+Cloning into 'Bent_Creek_Ceramics'...
+remote: Counting objects: 77, done.
+remote: Compressing objects: 100% (55/55), done.
+remote: Total 77 (delta 27), reused 69 (delta 19), pack-reused 0
+Unpacking objects: 100% (77/77), done.
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ ls
+Bent_Creek_Ceramics/
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ cd ..
+Gin@Ginnies-iMac:~/Desktop/Dev$ ls
+Bent_Creek_Ceramics/      Week_1_project_All_files/ ibeer_starter_files/      test-repo/
+Gin@Ginnies-iMac:~/Desktop/Dev$ cd Bent_Creek_Ceramics/Bent_Creek_Ceramics/
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics/Bent_Creek_Ceramics$ ls
+README.md   favicons_3/ images/     index.html  styles.css
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics/Bent_Creek_Ceramics$ ls
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics/Bent_Creek_Ceramics$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics/Bent_Creek_Ceramics$ cd ..
+Gin@Ginnies-iMac:~/.Trash$ cd ..
+Gin@Ginnies-iMac:~$ ls
+Applications/                   Documents/                      Incompatible Software/          Pictures/                       UNC Archive.pst*
+Creative Cloud Files/           Downloads/                      Library/                        Public/                         cvdm.err
+Creative Cloud Files (unknown)/ Dropbox/                        Movies/                         Samsung/                        igv/
+Desktop/                        HOA/                            Music/                          Sites/
+Gin@Ginnies-iMac:~$ cd Desktop/Dev/
+Gin@Ginnies-iMac:~/Desktop/Dev$ ls
+Bent_Creek_Ceramics/      Week_1_project_All_files/ ibeer_starter_files/      test-repo/
+Gin@Ginnies-iMac:~/Desktop/Dev$ cd Bent_Creek_Ceramics/
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ ls -l
+total 24
+-rw-r--r--   1 Gin  staff    31B Jul 23 15:06 README.md
+drwxr-xr-x  12 Gin  staff   408B Jul 23 15:06 favicons_3/
+drwxr-xr-x  21 Gin  staff   714B Jul 23 15:06 images/
+-rw-r--r--   1 Gin  staff   2.7K Jul 23 15:06 index.html
+-rw-r--r--   1 Gin  staff   1.8K Jul 23 15:06 styles.css
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ cd 
+Gin@Ginnies-iMac:~$ cd /Users/Gin/Library/Mobile Documents/com~apple~CloudDocs/Desktop/Dev/Bent_Creek_Ceramics
+-bash: cd: /Users/Gin/Library/Mobile: No such file or directory
+Gin@Ginnies-iMac:~$ ls
+Applications/                   Documents/                      Incompatible Software/          Pictures/                       UNC Archive.pst*
+Creative Cloud Files/           Downloads/                      Library/                        Public/                         cvdm.err
+Creative Cloud Files (unknown)/ Dropbox/                        Movies/                         Samsung/                        igv/
+Desktop/                        HOA/                            Music/                          Sites/
+Gin@Ginnies-iMac:~$ cd Desktop/Dev/Bent_Creek_Ceramics/
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ ls
+README.md   favicons_3/ images/     index.html  styles.css
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ ls -l
+total 24
+-rw-r--r--   1 Gin  502      31B Jul 22 21:36 README.md
+drwxr-xr-x  12 Gin  staff   408B Jul 23 15:06 favicons_3/
+drwxr-xr-x  21 Gin  staff   714B Jul 23 15:06 images/
+-rw-r--r--   1 Gin  502     2.9K Jul 23 15:31 index.html
+-rw-r--r--   1 Gin  502     2.0K Jul 23 15:34 styles.css
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git init
+Initialized empty Git repository in /Users/Gin/Desktop/Dev/Bent_Creek_Ceramics/.git/
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git remote add origin hhttps://github.com/gingin77/Bent_Creek_Ceramics.git
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git remote add origin https://github.com/gingin77/Bent_Creek_Ceramics.git
+fatal: remote origin already exists.
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git remote -v
+origin	hhttps://github.com/gingin77/Bent_Creek_Ceramics.git (fetch)
+origin	hhttps://github.com/gingin77/Bent_Creek_Ceramics.git (push)
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	README.md
+	favicons_3/
+	images/
+	index.html
+	styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git add .
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git commit -m "reinitializing after moving files in GUI"
+[master (root-commit) 9c63552] reinitializing after moving files in GUI
+ 33 files changed, 244 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 README.md
+ create mode 100644 favicons_3/android-chrome-192x192.png
+ create mode 100644 favicons_3/android-chrome-256x256.png
+ create mode 100644 favicons_3/apple-touch-icon.png
+ create mode 100644 favicons_3/browserconfig.xml
+ create mode 100644 favicons_3/favicon-16x16.png
+ create mode 100644 favicons_3/favicon-32x32.png
+ create mode 100644 favicons_3/favicon.ico
+ create mode 100644 favicons_3/manifest.json
+ create mode 100644 favicons_3/mstile-150x150.png
+ create mode 100644 favicons_3/safari-pinned-tab.svg
+ create mode 100644 images/.DS_Store
+ create mode 100644 images/background-1.jpg
+ create mode 100644 images/background-2.jpg
+ create mode 100644 images/background-3.jpg
+ create mode 100644 images/bent-creek-logo-coral.png
+ create mode 100644 images/bent-creek-logo.png
+ create mode 100644 images/bent-creek-logo_mod_4fav_gen.png
+ create mode 100644 images/bent-creek-logo_mod_coral.png
+ create mode 100644 images/bent-creek-logo_mod_dk_olive copy.png
+ create mode 100644 images/bent-creek-logo_mod_dk_olive.png
+ create mode 100644 images/bent-creek-logo_orginial.png
+ create mode 100644 images/birdhouse.jpg
+ create mode 100644 images/product-1.jpg
+ create mode 100644 images/product-2.jpg
+ create mode 100644 images/product-3.jpg
+ create mode 100644 images/product-4.jpg
+ create mode 100644 images/product-5.jpg
+ create mode 100644 images/product-6.jpg
+ create mode 100644 images/product-7.jpg
+ create mode 100644 index.html
+ create mode 100644 styles.css
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ git status
+On branch master
+nothing to commit, working tree clean
+Gin@Ginnies-iMac:~/Desktop/Dev/Bent_Creek_Ceramics$ cd
+Gin@Ginnies-iMac:~$ cd /Users/Gin/Desktop/Bent_Creek_Ceramics_IMPORTANT
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ ls
+README.md   favicons_3/ images/     index.html  styles.css
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    .DS_Store
+	deleted:    images/.DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git commit .
+Aborting commit due to empty commit message.
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git add .
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git commit -m "random ds files..."
+[master 5f30600] random ds files...
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 .DS_Store
+ delete mode 100644 images/.DS_Store
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git push
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 292 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/gingin77/Bent_Creek_Ceramics.git
+   23067e3..5f30600  master -> master
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git checkout -b text-box-adjustment
+Switched to a new branch 'text-box-adjustment'
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git status
+On branch text-box-adjustment
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+	modified:   styles.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git add .
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git commit -m "still trying to overlay text box on image"
+[text-box-adjustment 964cad3] still trying to overlay text box on image
+ 2 files changed, 39 insertions(+), 13 deletions(-)
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git push
+fatal: The current branch text-box-adjustment has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin text-box-adjustment
+
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git push --set-upstream origin text-box-adjustment
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 666 bytes | 0 bytes/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/gingin77/Bent_Creek_Ceramics.git
+ * [new branch]      text-box-adjustment -> text-box-adjustment
+Branch text-box-adjustment set up to track remote branch text-box-adjustment from origin.
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/gingin77/Bent_Creek_Ceramics.git
+  Push  URL: https://github.com/gingin77/Bent_Creek_Ceramics.git
+  HEAD branch: master
+  Remote branches:
+    master              tracked
+    text-box-adjustment tracked
+  Local branches configured for 'git pull':
+    master              merges with remote master
+    text-box-adjustment merges with remote text-box-adjustment
+  Local refs configured for 'git push':
+    master              pushes to master              (local out of date)
+    text-box-adjustment pushes to text-box-adjustment (fast-forwardable)
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git -l log
+Unknown option: -l
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git log
+commit 6f2194970f7a674173bb2bbb8b22dfaa8a5c798c
+Author: ginniehench_dsk_tp <ginniehench@gmail.com>
+Date:   Wed Jul 26 00:26:34 2017 -0400
+
+    fixed the float property on the first thumbnail image, along with widths and some text styling
+
+commit 46b31419cce2645042bf1591c344af2e9701c31e
+Author: ginniehench_dsk_tp <ginniehench@gmail.com>
+Date:   Tue Jul 25 23:31:52 2017 -0400
+
+    text content added to about html page
+
+commit ee81e743132f902e53655957cf86f7ab66d7cfb9
+Author: ginniehench_dsk_tp <ginniehench@gmail.com>
+Date:   Tue Jul 25 22:15:04 2017 -0400
+
+    first commit
+
+commit 238df85c5eb2ab3e42bf6943823d4e863407a549
+Author: ginniehench_dsk_tp <ginniehench@gmail.com>
+Date:   Tue Jul 25 22:13:23 2017 -0400
+
+    styling on front page set. time to move on
+
+commit 44885ee24c629b0b99d19a7f8820a0c7e30c234c
+Author: ginniehench_dsk_tp <ginniehench@gmail.com>
+Date:   Tue Jul 25 21:45:16 2017 -0400
+
+    have sorted out scroll with fixed position header, also spacing for title text
+
+commit 5d68b7b28c9b5bf05bf6bf6f5070a305f1990da2
+Author: ginniehench_dsk_tp <ginniehench@gmail.com>
+Date:   Tue Jul 25 18:37:08 2017 -0400
+
+    have tried a few more hacks to get the header to stay fixed... no solution
+
+commit 8728c3d4f6b80602535baac5ff5d674b9c82db27
+Author: ginniehench <ginniehench@gmail.com>
+Date:   Tue Jul 25 17:20:30 2017 -0400
+
+    sorted out sizing and positioning for header...next- how to scroll
+
+commit 49d4a39ccf46b00e3d1fe8e5b52ade43776ccd78
+Author: ginniehench_dsk_tp <ginniehench@gmail.com>
+Date:   Tue Jul 25 08:36:26 2017 -0400
+
+    creating a div to contain the logo. trying to create 2 boxes and then use z-stack to make one overlay the other.
+
+commit 1a713a11ccd0ef02e62048ffbddf4bdfc25f614b
+Author: ginniehench_dsk_tp <ginniehench@gmail.com>
+Date:   Tue Jul 25 01:19:06 2017 -0400
+
+    Changed to space-between
+
+commit 90819e830f3a66d777ef560454994f6af3182e08
+Author: ginniehench_dsk_tp <ginniehench@gmail.com>
+Date:   Tue Jul 25 01:13:42 2017 -0400
+
+    have resolved textbox overlay on all gallery photos. Now working on top header and nav bar.
+
+commit 220f5bc193d716d8c359934e48c7d73c38ce98e6
+Author: ginniehench_dsk_tp <ginniehench@gmail.com>
+Date:   Tue Jul 25 00:23:57 2017 -0400
+
+    I've worked out how to overlay a textbox on the first photo
+
+commit 964cad3a8a5ff04ca2dc6db30bbe92ea4bc80bb1
+Author: ginniehench_dsk_tp <ginniehench@gmail.com>
+Date:   Mon Jul 24 08:59:47 2017 -0400
+
+    still trying to overlay text box on image
+
+commit 5f30600d09b89fa5e86920bd04c3284e9e6638af
+Author: ginniehench_dsk_tp <ginniehench@gmail.com>
+Date:   Sun Jul 23 16:16:36 2017 -0400
+
+    random ds files...
+
+commit 23067e394e0a561188a1dd44638d4015538c1638
+Author: ginniehench <ginniehench@gmail.com>
+Date:   Sun Jul 23 15:46:13 2017 -0400
+
+    started on text boxes for gallery... realized I may need to convert all images to classes
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 3 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+nothing to commit, working tree clean
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git branch
+* master
+  text-box-adjustment
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 3 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git add index.html
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git commit -m "working on 3 html docs now"
+[master 5a4898d] working on 3 html docs now
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 4 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+nothing to commit, working tree clean
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git pull
+Merge made by the 'recursive' strategy.
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 5 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ git remote -v
+origin	https://github.com/gingin77/Bent_Creek_Ceramics.git (fetch)
+origin	https://github.com/gingin77/Bent_Creek_Ceramics.git (push)
+Gin@Ginnies-iMac:~/Desktop/Bent_Creek_Ceramics_IMPORTANT$ 
