@@ -316,7 +316,20 @@ p, span, blockquote, table{
   font-size: 225%;
 }
 
-.facilities_text figure{
-  float: right;
+.facilities p{
+  display:inline-block;
+  float: left;
+  margin: 0.2% 0.2% 0.2% 0.2%;
+  width: 75%;
+}
+
+.facilities figure{
+  display:inline;
+  /*float: right;*/
+  margin: 0.2% 0.2% 0.2% 0.2%;
   width: 25%;
+}
+
+figcaption{
+  font-size: 50%;
 }
