@@ -104,6 +104,7 @@ nav a:hover{
 
 nav a:active{
   color: #968772;
+  background-color: none;
 }
 
 .empty_logo{
@@ -248,16 +249,23 @@ footer div{
 
 /********  ABOUT Page ELEMENTS   **************/
 .wrapper{
-  max-width: 580px;
-  margin: 0 12% 0 12%;
+  /*max-width: 580px;*/
+  margin: 0 auto; /*12% 0 12%;*/
   padding-top: 60px;
   font-family: 'Merriweather', serif;
 }
 
+section{
+  max-width: 580px;
+  margin: 0 auto;
+  padding-bottom: 3%;
+}
+
+
 .wrapper section h1{
   text-align: center;
   padding: 3% 0 0 0;
-  font-size: 200%;
+  font-size: 225%;
   /*font-weight: lighter;*/
 }
 
@@ -269,4 +277,46 @@ footer div{
 
 p, span, blockquote, table{
   font-size: 1em;
+}
+
+.thumbnail p a{
+  color: #968772;
+}
+
+.thumbnail p a:hover{
+  color: #967343;
+}
+/*background-image: url('img/header-img.jpg');*/
+.room-to-grow {
+  background-image: url('images/background-3.jpg');
+  min-height: 200px;
+  position:relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caption {
+  /*position: absolute;*/
+  max-width: 100%;
+  text-align: center;
+  padding: 15px 0 15px 0;
+}
+
+.caption span{
+  text-align: center;
+  /*position: relative;*/
+  color: #f2f1e8;
+  font-size: 1em;
+    /*padding: 3% 0 0 0;*/
+  font-size: 225%;
+}
+
+.facilities_text figure{
+  float: right;
+  width: 25%;
 }

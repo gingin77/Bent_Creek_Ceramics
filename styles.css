@@ -104,7 +104,9 @@ nav a:hover{
 
 nav a:active{
   color: #968772;
+  background-color: none;
 }
+
 
 .empty_logo{
   /* Added for more effective center-alignment
