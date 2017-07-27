@@ -330,6 +330,26 @@ p, span, blockquote, table{
   width: 25%;
 }
 
+figure img{
+  padding: 0;
+  margin: 0;
+}
+
 figcaption{
-  font-size: 50%;
+  font-size: 70%;
+}
+
+table, th, td {
+  border: 1px solid #131511;
+  border-collapse: collapse;
+  padding: 8px;
+}
+
+.shaded{
+  background-color: #F1EADD;
+}
+
+
+thead tr th{
+  text-align: center;
 }
