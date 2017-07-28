@@ -32,7 +32,30 @@
       </nav>
       <div class="empty_logo"> </div>
   </header>
-  <div class="form">
-
+  <div class="not_header">
+      <div class="empty"></div>
+      <div class="form_box">
+        <h1>Sign Up for Our Weekly Newsletter</h1>
+        <h2>Stay up to date with events, activities, news and specials.</h2>
+        <form action="./process_form_data.php" method="post">
+           <fieldset>
+               <div class="row">
+                   <label for="full-name">Name</label>
+                   <input id="nameInput" type="text" id="full-name" name="full-name" required>
+               </div>
+               <div class="row">
+                  <label for="email">Email</label>
+                  <input id="emailInput" type="email" id="email" name="last-name">
+               </div>
+            </fieldset>
+            <div>
+              <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+      </div>
   </div>
+  <div class="not_header2">
+    <div class="empty"></div>
+    <div class="bckgrndimag2"></div>
+  </div >
 </body>
